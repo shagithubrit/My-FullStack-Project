@@ -285,9 +285,10 @@ const insertComplain = async (req, res) => {
 const loadComplain = async (req, res) => {
     try {
         //const userData = await Complain.findById({ _id: req.session.complain_id });
-        const userData = await Complain.find({email:Email});
+        const userData = await User.findById({ _id: req.session.user_id });
+        const complainData = await Complain.find({email:Email});
         
-        res.render('usercomplain', { complain: userData });
+        res.render('usercomplain', { complain: complainData, user: userData});
     } catch (error) {
         console.log(error.message);
     }
@@ -395,6 +396,16 @@ const insertRating = async (req, res) =>{
     }
 }
 
+const loadDashboard = async (req,res) =>{
+    try{
+        const userData = await User.findById({ _id: req.session.user_id });
+        const complainData = await Complain.find({email:userData.email});
+        res.render('dashBoard', { user: userData, complain: complainData });
+    }catch(error){
+        console.log(error);
+    }
+} 
+
 module.exports = {
     loadRegister,
     insertUser,
@@ -417,5 +428,6 @@ module.exports = {
     deleteComplain,
     loadUserStaus,
     loadRate,
-    insertRating
+    insertRating,
+    loadDashboard
 }

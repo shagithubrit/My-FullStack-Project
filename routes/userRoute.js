@@ -90,6 +90,8 @@ userRoute.get('/status',auth.isLogin,userController.loadUserStaus);
 
 userRoute.get('/rate',auth.isLogin,userController.loadRate);
 
-userRoute.post('/rate',userController.insertRating);
+userRoute.post('/rate',auth.isLogin,userController.insertRating);
+
+userRoute.get('/dashBoard',auth.isLogin,userController.loadDashboard);
 
 module.exports = userRoute;

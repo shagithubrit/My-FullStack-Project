@@ -1,0 +1,305 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <title>Complaint Admin</title>
+    <link rel="stylesheet" href="/views/css/adminhome.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+</head>
+
+<body>
+    <div style="display: flex;">
+
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2> <span class="las la-Complaint-Box"></span> Complaint-Box</h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href=""><span class="las la-user-circle"></span>
+                            <span>Profile</span></a>
+                    </li>
+                    <li>
+                        <a href="/admin/dashboard" class="active"><span class="las la-igloo"></span>
+                            <span>Dashboard</span></a>
+
+                    </li>
+
+                    <li>
+                        <a href="" class="active"><span class="las la-users"></span>
+                            <span>Residents</span></a>
+
+                    </li>
+                    <li>
+
+                        <a href=""><span class="las la-workers"></span>
+                            <span>Workers</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="las la-clipboard-list"></span>
+                            <span>Complaints</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="las la-star"></span>
+                            <span>Rate us</span></a>
+                    </li>
+                    <li>
+                        <a href="/admin/logout"><span style="color: white;">❌</span>
+                            <span>Logout</span></a>
+                    </li>
+                </ul>
+            </div>
+            <header>
+                <h2>
+                  
+                    <label for="nav-toggle">
+                        <span class="las la-bars">
+
+                        </span>
+                    </label>
+                    Dashboard
+                </h2>
+                <div class="search-wrapper">
+                    <span class="las la-search"></span>
+                    <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <img src="/public/userImages/<%= user.image %>" width="40px" height="40px" alt="Admin Image">
+                    <div>
+                        <h4>
+                            <%=user.name %>
+                        </h4>
+                        <small>Super Admin</small>
+                    </div>
+                </div>
+
+              
+            </header>
+        </div>
+        <div style="overflow-x: auto;">
+            <table>
+                <th>
+                    <tr>Name : <%=complain.name %>
+                    </tr>
+                    <tr>Email : <%=complain.email %>
+                    </tr>
+                    <tr>complain type : <%=complain.customcomplain %>
+                    </tr>
+                </th>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <title>Complaint Admin</title>
+    <link rel="stylesheet" href="/views/css/adminhome.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+        <style>
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 48
+            }
+            </style>   
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2> <span class="las la-Complaint-Box"></span> Complaint-Box</h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href=""><span class="las la-user-circle"></span>
+                        <span>Profile</span></a>
+                </li>
+                <li>
+                    <a href="/admin/dashboard" class="active"><span class="las la-igloo"></span>
+                        <span>Dashboard</span></a>
+
+                </li>
+
+                <li>
+                    <a href="" class="active"><span class="las la-users"></span>
+                        <span>Residents</span></a>
+
+                </li>
+                <li>
+
+                    <a href=""><span class="las la-workers"></span>
+                        <span>Workers</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span>Complaints</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-star"></span>
+                        <span>Rate us</span></a>
+                </li>
+                <li>
+                    <a href="/admin/logout"><span style="color: white;">❌</span>
+                        <span>Logout</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <!-- <div class="header-title"> -->
+                <label for="nav-toggle">
+                    <span class="las la-bars">
+
+                    </span>
+                </label>
+                Review Complaint
+            </h2>
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <img src="/public/userImages/<%= user.image %>" width="40px" height="40px" alt="Admin Image">
+                <div>
+                    <h4>
+                        <%=user.name %>
+                    </h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+
+            <!-- </div> -->
+        </header>
+        <main>
+            <div class="cards">
+                <div class="cards-single">
+                    <div>
+    
+                        <span>Residents</span>
+                    </div>
+                    <div>
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div>
+                        <h1>
+                           0
+                        </h1>
+                        <span>Pending Complaints</span>
+                    </div>
+                    <div>
+                        <span class="las la-receipt"></span>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div>
+                        <h1>
+                           0
+                        </h1>
+                        <span> Total Complaints</span>
+                    </div>
+                    <div>
+                        <span class="las la-receipt"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><%=complain.name%></h3>
+
+                            
+                            <button><a style="color: white; cursor: pointer;" href="mailto:<%= complain.email %>">Email</a><span class="las la-arrow-right">
+
+                                </span></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Complain Type</td>
+                                            <td>Complaint pdf</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       
+                                                <tr>
+                                                    <td>
+                                                        <%= complain.customcomplain %>
+                                                    </td>
+                                                    <td style="padding: 20px;">
+                                                        <iframe src="/public/userpdfcomplain/<%= complain.pdf %>" frameborder="2px"></iframe><br>
+                                                        <a href="/public/userpdfcomplain/<%= complain.pdf %>" style="background-color: rgb(240, 55, 132); border-radius: 10px; padding: 8px 25px; color: white; cursor: pointer;">view</a>
+                                                    </td>
+                                                    <td style="padding: 10px 10px;">
+                                                        <% if(complain.status){ %>
+                                                            completed
+                                                            <span style="background-color: rgb(132, 249, 132); color: white; border-radius: 5px; padding: 10px 10px;" class="material-symbols-outlined">done</span>   
+                                                        <% }else{ %>
+                                                        <span class="status orange"></span>
+                                                        reviewed</td>
+                                                        <% } %>
+                                                    <td>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="card-header">
+                            <p><b>Complaint Description : </b></p><br>
+                            <p><%=complain.complain %></p>
+                        </div>
+                        <div class="card-header">
+                            <form action="" method="post">
+                            <textarea style="padding: 10px 10px;" name="sol" rows="3" cols="60" placeholder="write here..." required></textarea>
+                            <input type="hidden" name="complain_id" value="<%= complain._id%>">
+                            <button type="submit" style="cursor: pointer;">Post Solution<span class="las la-arrow-right">
+                            </span></button>
+                            </form>
+                            
+                            
+                        </div>
+                        <center><div style="padding: 10px; ">
+                        <a href="/admin/status?id=<%= complain._id%>" style="background-color: rgb(6, 188, 6); border-radius: 8px; padding: 10px 10px; color: white; cursor: pointer;">Mark as completed</a></div></center>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+    </div>
+</body>
+
+</html>

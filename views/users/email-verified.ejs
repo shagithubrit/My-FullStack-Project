@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email verified</title>
+</head>
+<body>
+    <h1>Your Email has been verified.</h1>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special-Giggle</title>
+    <link rel="stylesheet" href="/views/css/register.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <nav class="navbar bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/public/Aviskar.jfif" alt="Bootstrap" id="login-img"  width="30" height="24">
+           COMPLAINT-BOX
+          </a>
+        </div>
+      </nav>
+    <div id="login">
+        <div id="complaint_box">
+            <h1 id="complain"><u>
+                    <center><b>COMPLAINT BOX</b></center>
+                </u></h1>
+            <br><br>
+            <h3 style="background-color: green; color:aliceblue;">Your email has been verified.</h3>
+            <h2>
+                <center>
+                    <div   class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <a href="/login" class="btn btn-outline-primary" for="btnradio1">login as User</a>
+            
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <a href="/admin"  class="btn btn-outline-primary" for="btnradio3">login as Admin</a>
+                  </div>
+                </center>
+            </h2>
+            <br>
+             <!-- make Post  request to login  -->
+           <form action="/login" method="POST">
+                <div id="form">
+                    <label for="email">Email</label>
+                    <center> <input style="height:30px;" type="email" class="form-control" name="username" placeholder="username" size="20">
+                    </center>
+                    <label for="password">Password</label>
+                    <center> <input style="height:30px;" type="password" class="form-control" name="password" placeholder="password"
+                            size="20">
+                    </center>
+                    <center><button type="submit">Login</button></a></center>
+                </div>
+            </form>
+            <br><br>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html> 
+
+

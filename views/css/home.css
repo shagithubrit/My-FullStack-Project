@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right,rgb(0, 0, 0), rgb(0, 0, 0));
+}
+#navebar{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+#logout{
+    float: right;
+    background-color: white;
+    flex-direction: row;
+    width: 120px;
+    cursor: pointer;
+    border: solid black;
+    border-radius: 20px;
+    padding: 5px; 
+    position: relative;
+}
+
+#logout span{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#logout a{
+    text-decoration: none;
+}
+
+#complain{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+#complaint_box{
+    background: linear-gradient(#fe7bca,rgb(250, 41, 167));
+    width: 450px;
+    /* margin-left: 35%; */
+    margin: auto;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+
+#complaint_box input{
+    width: 280px;
+    height: 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#complaint_box button{
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+#complaint_box h4 a{
+    color: greenyellow;
+}
+/* #form label{
+    margin-left: 20%;
+}
+#complain-form label{
+    margin-left: 20%;
+} */
+
+
+img{
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+/* .mb-3{
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+/* .mb-3 level{
+    margin-left: 20%;
+} */
+
+/* .form-select{
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+#complain-form{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.logo a{
+    padding-left: 10px;
+    text-decoration: none;
+}
+

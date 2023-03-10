@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right,rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+#login{
+    margin-top: 50px;
+}
+#complain{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+#complaint_box{
+    background: linear-gradient(#fe7bca,rgb(250, 41, 167));
+    width: 430px;
+    margin: auto;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+#complaint_box input{
+    width: 280px;
+    height: 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#complaint_box button{
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 1rem;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+#complaint_box h4{
+    font-size: 1rem;
+}
+#complaint_box h4 a{
+    color: greenyellow;
+}
+#form label{
+    margin-left: 20%;
+}
+
+img{
+    padding: 0;
+    margin-top: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+

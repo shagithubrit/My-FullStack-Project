@@ -10,7 +10,6 @@ const randomstring = require("randomstring");
 
 const alert = require("alert");
 
-
 const securePassword = async (password) => {
     try {
         const passwordHash = await bcrypt.hash(password, 10);

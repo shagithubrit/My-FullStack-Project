@@ -75,7 +75,6 @@ nav ul li a:hover{
 }
 
 .side-menu a:hover{
-    background: #ff19a3;
     padding-left: 20px;
 }
 
@@ -101,12 +100,12 @@ nav .menu-bar{
     display: none;
 }
 
-.side-menu .Logout{
+.Logout{
      display: none;
 }
 
 #menu:checked ~ .side-menu{
-      left: 0;    
+      left: 0;
 }
 
 
@@ -114,7 +113,7 @@ nav .menu-bar{
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
-    background: linear-gradient(#fe7bca,rgb(250, 41, 167));
+    background: linear-gradient(#df1186,rgb(250, 41, 167));
     width: 450px;
     margin: auto;
     border-radius: 20px;
@@ -227,22 +226,38 @@ table {
 
     .side-menu{
         width: 100%;
-        left: 100%;
-        text-align: center;
+        left: 100%;   
         background-color: #fe7bca;
         transition: all 0.5s;
     }
      
     .side-menu a i{
-        display: none;
+        display: inline;
+        font-size: 20px;
+        margin-left: 12px;
+        left:0;
     }
 
+    #menu:checked ~ .side-menu{
+        margin-left: 50%;
+    }
     .side-menu a span{
-        display: block;
+        display: inline;
     }
 
+    .side-menu a span:hover{
+     color: rgb(100, 98, 99);
+    }
     .side-menu .Logout{
-        display: block;
+        margin-left: 15%;
+        display: inline;
+        border: 1.6px solid white;
+        padding: 6px;
+        border-radius: 10px;
+    }
+    .side-menu .Logout:hover{
+        margin-left: 15%;
+        color: rgb(242, 105, 173);
     }
     nav .menu-bar{
         display: block;

@@ -16,9 +16,9 @@ body{
 }
 #complaint_box{
     background: linear-gradient(#fe7bca,rgb(250, 41, 167));
-    width: 430px;
+    width: 450px;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     color: aliceblue;
 }
 
